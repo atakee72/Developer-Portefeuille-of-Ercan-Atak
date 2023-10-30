@@ -1,4 +1,7 @@
 import React from "react";
+// import { SanityDocument } from "next-sanity";
+import { postsQuery } from "../../sanity/lib/queries.js";
+import { sanityFetch } from "../../sanity/lib/sanityFetch.js";
 import {
   Header,
   Info,
@@ -8,7 +11,9 @@ import {
   Footer,
   Navbar,
 } from "@/components";
-const App = () => {
+const App = async () => {
+  const posts = await sanityFetch({ query: postsQuery });
+
   return (
     <>
       <header>
@@ -18,7 +23,7 @@ const App = () => {
       <main>
         <Topics />
         <Info />
-        <Blog />
+        <Blog posts={posts} />
         <Testimonials />
         <Footer />
       </main>

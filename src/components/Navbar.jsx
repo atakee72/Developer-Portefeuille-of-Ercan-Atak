@@ -4,7 +4,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav>
-      <Link href={"#"}>Ercan.</Link>
+      <Link className="font-extrabold text-5xl " href={"#"}>
+        Ercan.
+      </Link>
     </nav>
   );
 };
