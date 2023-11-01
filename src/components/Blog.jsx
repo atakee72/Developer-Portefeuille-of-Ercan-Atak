@@ -12,9 +12,12 @@ export default function Blog({ posts }) {
   return (
     <section className="container bg-slate-100 mx-auto grid grid-cols-1 divide-y divide-blue-100">
       <h1 className="text-2xl p-4 font-bold">{title}</h1>
-      <div className="grid grid-cols-5 gap-10">
+      <div className="grid grid-cols-3 gap-10">
         {posts.map((post) => (
-          <div className=" bg-white rounded-lg relative overflow-hidden  duration-300 ease-in-out  m-4 p-4 shadow-md hover:shadow-lg hover:translate-y-[-3px] hover:translate-x-[3px] transition-transform">
+          <div
+            key={post._id}
+            className=" bg-white rounded-lg relative overflow-hidden  duration-300 ease-in-out  m-4 p-4 shadow-md hover:shadow-lg hover:translate-y-[-3px] hover:translate-x-[3px] transition-transform"
+          >
             <div className="absolute font-alegreya font-semibold text-xs text-black bg-pink-200 px-4 py-0.5 right-8 top-8 rounded-full">
               {post.label}
             </div>
