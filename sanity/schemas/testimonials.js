@@ -7,6 +7,9 @@ export const testimonials = {
       name: "image",
       type: "image",
       title: "Image",
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: "name",

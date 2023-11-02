@@ -17,6 +17,7 @@ export default function Post({ post }) {
           src={builder.image(post.mainImage).width(300).height(300).url()}
           width={300}
           height={300}
+          loading="lazy"
           alt={post?.mainImage?.alt}
         />
       ) : null}
