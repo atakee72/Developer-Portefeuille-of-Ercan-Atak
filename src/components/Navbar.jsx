@@ -11,7 +11,7 @@ const Navbar = () => {
       >
         Ercan.
       </Link>
-      <div>
+      <div className="flex-1">
         <ul className="flex justify-center items-center flex-1">
           {["home", "about", "work", "contact", "blog"].map((item) => (
             <li key={`link-${item}`} className="my-0 mx-4">

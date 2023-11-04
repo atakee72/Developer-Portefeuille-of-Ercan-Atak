@@ -1,6 +1,5 @@
 import React from "react";
-// import { SanityDocument } from "next-sanity";
-import { postsQuery } from "../../sanity/lib/queries.js";
+import { postsQuery, testimonialsQuery } from "../../sanity/lib/queries.js";
 import { sanityFetch } from "../../sanity/lib/sanityFetch.js";
 import {
   Header,
@@ -13,6 +12,7 @@ import {
 } from "@/components";
 const App = async () => {
   const posts = await sanityFetch({ query: postsQuery });
+  const testimonials = await sanityFetch({ query: testimonialsQuery });
 
   return (
     <>
@@ -24,7 +24,7 @@ const App = async () => {
         <Topics />
         <Info />
         <Blog posts={posts} />
-        <Testimonials />
+        <Testimonials testimonials={testimonials} />
         <Footer />
       </main>
     </>

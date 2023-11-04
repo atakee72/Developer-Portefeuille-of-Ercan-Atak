@@ -16,3 +16,9 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
 export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]{
     "params": { "slug": slug.current }
   }`;
+
+
+// Get all testimonials
+export const testimonialsQuery = groq`*[_type == "testimonials" && defined(name) && defined(company) && defined(message) && defined(image)]{
+  _id, image, name, company, message
+}`;
