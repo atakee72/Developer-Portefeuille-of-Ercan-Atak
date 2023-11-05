@@ -27,6 +27,7 @@ export default function Blog({ posts }) {
                 src={urlForImage(post.mainImage).url()} // Remove width and height attributes
                 alt={post?.mainImage?.alt}
                 fill
+                sizes="100vw"
               />
             </div>
 

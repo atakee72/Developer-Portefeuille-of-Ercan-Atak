@@ -8,6 +8,8 @@ import { client } from "../../sanity/lib/client.js";
 const builder = imageUrlBuilder(client);
 
 export default function Post({ post }) {
+  console.log("🚀 ~ Post ~ post:", post);
+
   return (
     <main className="container mx-auto prose prose-lg p-4 mt-10">
       <h1>{post?.title}</h1>
@@ -23,7 +25,7 @@ export default function Post({ post }) {
       ) : null}
       {post?.body ? <PortableText value={post.body} /> : null}
 
-      <span>{post._createdAt}</span>
+      <span>{post?._createdAt}</span>
     </main>
   );
 }
