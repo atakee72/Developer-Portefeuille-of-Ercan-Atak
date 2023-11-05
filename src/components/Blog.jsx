@@ -26,7 +26,7 @@ export default function Blog({ posts }) {
               <Image
                 src={urlForImage(post.mainImage).url()} // Remove width and height attributes
                 alt={post?.mainImage?.alt}
-                layout="fill"
+                fill
               />
             </div>
 
