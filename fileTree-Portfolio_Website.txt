@@ -1,0 +1,61 @@
+Portfolio_Website
+├── .env.local
+├── .eslintrc.json
+├── .gitignore
+├── jsconfig.json
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   └── assets
+│       ├── bgWhite.png
+│       ├── blog1.jpg
+│       ├── blog2.jpg
+│       ├── blog3.jpg
+│       ├── facebookLogo.svg
+│       ├── index.js
+│       ├── instagramLogo.svg
+│       ├── testimonial1.png
+│       ├── testimonial2.png
+│       ├── testimonial3.png
+│       └── twitterLogo.svg
+├── README.md
+├── sanity
+│   ├── env.js
+│   ├── lib
+│   │   ├── client.js
+│   │   ├── image.js
+│   │   ├── queries.js
+│   │   └── sanityFetch.js
+│   ├── schema.js
+│   └── schemas
+│       ├── author.js
+│       ├── blockContent.js
+│       ├── category.js
+│       ├── post.js
+│       └── testimonials.js
+├── sanity.cli.js
+├── sanity.config.js
+├── src
+│   ├── app
+│   │   ├── globals.css
+│   │   ├── layout.jsx
+│   │   ├── page.jsx
+│   │   ├── studio
+│   │   │   └── [[...index]]
+│   │   │       └── page.jsx
+│   │   └── [slug]
+│   │       └── page.jsx
+│   └── components
+│       ├── Blog.jsx
+│       ├── BlogPost.jsx
+│       ├── Footer.jsx
+│       ├── Header.jsx
+│       ├── index.js
+│       ├── Info.jsx
+│       ├── MobileMenuBtn.jsx
+│       ├── Navbar.jsx
+│       ├── Testimonials.jsx
+│       └── Topics.jsx
+└── tailwind.config.js

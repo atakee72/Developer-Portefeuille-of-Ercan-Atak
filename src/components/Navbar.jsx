@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
 
       <ul className=" hidden md:flex justify-center items-center flex-1">
-        {["home", "about", "work", "contact", "blog"].map((item) => (
+        {["home", "about", "work", "blog", "contact"].map((item) => (
           <li key={`link-${item}`} className="my-0 mx-4 flex-col group">
             <div className="w-2 h-2 bg-transparent rounded-full mx-auto mb-1 group-hover:bg-secondary transition-all ease-in-out" />
 

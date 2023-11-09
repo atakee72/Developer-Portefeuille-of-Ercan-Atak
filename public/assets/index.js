@@ -1,13 +1,13 @@
-import blog1 from "@/blog1.jpg";
-import blog2 from "@/blog2.jpg";
-import blog3 from "@/blog3.jpg";
-import testimonial1 from "@/testimonial1.jpg";
-import testimonial2 from "@/testimonial2.jpg";
-import testimonial3 from "@/testimonial3.jpg";
-import facebookLogo from "@/facebookLogo.svg";
-import twitterLogo from "@/twitterLogo.svg";
-import instagramLogo from "@/instagramLogo.svg";
-import bgWhite from "@/bgWhite.png";
+import blog1 from "/public/assets/blog1.jpg";
+import blog2 from "/public/assets/blog2.jpg";
+import blog3 from "/public/assets/blog3.jpg";
+import testimonial1 from "/public/assets/testimonial1.png";
+import testimonial2 from "/public/assets/testimonial2.png";
+import testimonial3 from "/public/assets/testimonial3.png";
+import facebookLogo from "/public/assets/facebookLogo.svg";
+import twitterLogo from "/public/assets/twitterLogo.svg";
+import instagramLogo from "/public/assets/instagramLogo.svg";
+import bgWhite from "/public/assets/bgWhite.png";
 
 export {
   blog1,

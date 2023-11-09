@@ -17,8 +17,8 @@ const App = async () => {
   return (
     <>
       <header>
-        <Header />
         <Navbar />
+        <Header />
       </header>
 
       <main>

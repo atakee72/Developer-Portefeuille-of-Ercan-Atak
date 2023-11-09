@@ -1,7 +1,7 @@
 import React from "react";
 
 const Topics = () => {
-  return <section>Topics</section>;
+  return <div>Topics</div>;
 };
 
 export default Topics;

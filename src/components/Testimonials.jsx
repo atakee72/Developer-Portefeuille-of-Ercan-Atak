@@ -2,14 +2,15 @@ import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "../../sanity/lib/client.js";
 import { urlForImage } from "../../sanity/lib/image.js";
+import AppWrap from "@/utils/AppWrap.js";
 
 const builder = imageUrlBuilder(client);
 
 const Testimonials = ({ testimonials }) => {
   if (testimonials.length === 0) {
     return (
-      <section id="testimonials">
-        <div id="wrapper">
+      <section>
+        <div>
           <h2>What others say?</h2>
           <p>No testimonials available at the moment.</p>
         </div>
@@ -18,8 +19,8 @@ const Testimonials = ({ testimonials }) => {
   }
 
   return (
-    <section className="container bg-slate-100 mx-auto  ">
-      <div id="wrapper">
+    <section className="container bg-slate-100 mx-auto">
+      <div>
         <h2 className="text-2xl p-4 font-bold">What others say?</h2>
 
         <div className="flex flex-col sm:flex-row justify-around">
@@ -50,4 +51,5 @@ const Testimonials = ({ testimonials }) => {
   );
 };
 
-export default Testimonials;
+export default AppWrap(Testimonials, "testimonials");
+
