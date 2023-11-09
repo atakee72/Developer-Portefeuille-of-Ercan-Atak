@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Topics from "@/components/Topics";
+import Topics from "./Topics";
 import Info from "@/components/Info";
 import Blog from "@/components/Blog";
 import Testimonials from "@/components/Testimonials";

@@ -10,7 +10,7 @@ const Testimonials = ({ testimonials }) => {
     return (
       <section id="testimonials">
         <div id="wrapper">
-          <h2>What our students say?</h2>
+          <h2>What others say?</h2>
           <p>No testimonials available at the moment.</p>
         </div>
       </section>
@@ -18,13 +18,16 @@ const Testimonials = ({ testimonials }) => {
   }
 
   return (
-    <section id="testimonials" className="bg-pink-200/30 mx-auto ">
+    <section className="container bg-slate-100 mx-auto  ">
       <div id="wrapper">
-        <h2>What our students say?</h2>
+        <h2 className="text-2xl p-4 font-bold">What others say?</h2>
 
-        <div className="mt-12 flex justify-evenly">
+        <div className="flex flex-col sm:flex-row justify-around">
           {testimonials.map((testimonial, i) => (
-            <div className="w-[264px]" key={i}>
+            <div
+              className="m-4 flex flex-col justify-center items-center"
+              key={i}
+            >
               <Image
                 src={urlForImage(testimonial.image).url()}
                 width={100}
@@ -32,14 +35,12 @@ const Testimonials = ({ testimonials }) => {
                 alt="commenting person"
                 className="rounded-lg"
               />
-              <div className="reviewer-details">
-                <div className="font-bold text-xl mt-4">{testimonial.name}</div>
-                <div className="text-xs uppercase px-2 py-0 text-opacity-70">
-                  {testimonial.company}
-                </div>
-                <div className="font-normal text-xs h-5 mt-1">
-                  {testimonial.message}
-                </div>
+              <div className="font-bold text-xl mt-4">{testimonial.name}</div>
+              <div className="text-xs uppercase px-2 py-0 text-opacity-70">
+                {testimonial.company}
+              </div>
+              <div className="font-normal text-xs h-5 mt-1">
+                {testimonial.message}
               </div>
             </div>
           ))}

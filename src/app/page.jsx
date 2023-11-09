@@ -20,11 +20,12 @@ const App = async () => {
         <Header />
         <Navbar />
       </header>
+
       <main>
-        <Topics />
         <Info />
         <Blog posts={posts} />
         <Testimonials testimonials={testimonials} />
+        <Topics />
         <Footer />
       </main>
     </>

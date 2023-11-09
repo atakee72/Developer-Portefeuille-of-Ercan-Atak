@@ -7,6 +7,7 @@ import testimonial3 from "@/testimonial3.jpg";
 import facebookLogo from "@/facebookLogo.svg";
 import twitterLogo from "@/twitterLogo.svg";
 import instagramLogo from "@/instagramLogo.svg";
+import bgWhite from "@/bgWhite.png";
 
 export {
   blog1,
@@ -18,4 +19,5 @@ export {
   facebookLogo,
   twitterLogo,
   instagramLogo,
+  bgWhite,
 };

@@ -12,38 +12,33 @@ export default function Blog({ posts }) {
   return (
     <section className="container bg-slate-100 mx-auto grid grid-cols-1 min-h-fit">
       <h1 className="text-2xl p-4 font-bold">Latest {title}</h1>
-      <div className="grid grid-cols-3 gap-10 h-80">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 h-full  ">
         {posts.map((post) => (
-          <div
-            key={post._id}
-            className="relative overflow-hidden bg-white rounded-lg duration-300 ease-in-out m-4 shadow-md hover:shadow-lg hover:translate-y-[-3px] transition-transform flex flex-col min-h-full"
-          >
-            <div className="absolute font-semibold text-xs text-black bg-pink-200 px-4 py-0 right-2 top-2 rounded-lg z-10">
-              {post.label}
-            </div>
+          <Link href={post.slug.current}>
+            <div
+              key={post._id}
+              className="relative overflow-hidden bg-white rounded-lg duration-300 ease-in-out m-4 shadow-md hover:shadow-lg hover:translate-y-[-3px] transition-transform flex flex-col min-h-full w-4/5 xs:w-2/3 sm:w-3/4 md:w-3/4 xl:w-4/5 2xl:w-5/6 mx-auto"
+            >
+              <div className="absolute font-semibold text-xs text-white px-4 py-0 right-2 top-2 rounded-lg z-10">
+                {post.label}
+              </div>
 
-            <div className="relative w-full h-full">
-              <Image
-                src={urlForImage(post.mainImage).url()} // Remove width and height attributes
-                alt={post?.mainImage?.alt}
-                fill
-                sizes="100vw"
-              />
-            </div>
+              <div className="relative  w-full aspect-[3/2]">
+                <Image
+                  src={urlForImage(post.mainImage).url()}
+                  alt={post?.mainImage?.alt}
+                  fill
+                  sizes="100vw"
+                />
+              </div>
 
-            <div className="flex-1 flex flex-col justify-between">
-              <h3 className="font-semibold text-lg leading-6 text-black px-4 py-4 m-0">
-                {post.title}
-              </h3>
-
-              <Link
-                href={post.slug.current}
-                className="p-1 hover:bg-blue-50 bg-pink-100 rounded-lg mx-auto mt-2 mb-5 text-center "
-              >
-                Read more
-              </Link>
-            </div>
-          </div>
+              <div className="flex-1 flex flex-col justify-between">
+                <h3 className="font-semibold text-lg leading-6 text-black px-4 py-4 m-0">
+                  {post.title}
+                </h3>
+              </div>
+            </div>{" "}
+          </Link>
         ))}
       </div>
       <div className="flex justify-center mt-5 mb-7">
