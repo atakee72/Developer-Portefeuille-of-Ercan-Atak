@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className=" bg-[#154b97]/70 text-white mt-28 w-full h-screen flex flex-col items-center justify-center ">
+    <section className=" bg-[#930146]/30 text-white mt-28 w-full h-screen flex flex-col items-center justify-center ">
       <h2 className="head-text text-lg font-semibold uppercase">
         Contact info:
       </h2>
 
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
+      <div className="w-60 flex justify-evenly items-center flex-wrap m-16 8 8">
+        <div className="min-w-minWidth flex flex-row justify-start items-center m-4 p-4 rounded-10 cursor-pointer bg-fef4f5 ">
           <Link
             href="mailto:atakee@gmail.com"
             target="_blank"
@@ -26,6 +26,9 @@ const Footer = () => {
         </div>
         <p>12049 Berlin, Germany</p>
       </div>
+      <p className=" absolute mt-[600px] font-semibold">
+        Developed by Ercan. All rights reserved.
+      </p>
       {/* <div className="app__footer-form app__flex">
         <div className="app__flex border w-1/3 my-1">
           <input

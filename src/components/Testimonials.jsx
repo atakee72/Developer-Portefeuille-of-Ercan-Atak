@@ -19,7 +19,7 @@ const Testimonials = ({ testimonials }) => {
   }
 
   return (
-    <section className="bg-secondary/20 mx-auto min-h-screen mt-28 w-full">
+    <section className="bg-[#01889f]/30 mx-auto min-h-screen mt-28 w-full">
       <div>
         <h2 className="text-2xl p-4 font-bold">What people say?</h2>
 

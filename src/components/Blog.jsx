@@ -13,7 +13,7 @@ const Blog = ({ posts }) => {
   const title = posts.length === 1 ? `1 Post` : `${posts.length} Posts`;
 
   return (
-    <section className="bg-[#4995a5]/10 mx-auto grid grid-cols-1 min-h-screen mt-28 w-full">
+    <section className="bg-[#814256]/30 mx-auto grid grid-cols-1 min-h-screen mt-28 w-full">
       <h1 className="text-2xl text-center p-1 font-bold mt-10 mb-0">
         Latest {title} in my blog
       </h1>
@@ -46,7 +46,7 @@ const Blog = ({ posts }) => {
           </Link>
         ))}
       </div>
-      <div className="flex justify-center items-center bg-gray/50 rounded-md mx-[900px] px-0 font-semibold text-xl  text-black h-10 hover:bg-secondary hover:text-white">
+      <div className="flex justify-center items-center bg-white rounded-md mx-[900px] px-0 font-semibold text-xl  text-black h-10 hover:bg-secondary hover:text-white">
         <a href="#">All Posts</a>
       </div>
     </section>

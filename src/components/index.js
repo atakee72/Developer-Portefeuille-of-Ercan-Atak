@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import SocialMedia from "@/components/SocialMedia";
 import NavigationDots from "@/components/NavigationDots";
+import ThemeToggleBtn from "@/components/ThemeToggleBtn";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   Navbar,
   SocialMedia,
   NavigationDots,
+  ThemeToggleBtn,
 };
