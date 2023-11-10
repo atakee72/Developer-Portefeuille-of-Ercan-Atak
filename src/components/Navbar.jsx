@@ -9,19 +9,21 @@ const Navbar = () => {
         <Link href={"#"}>Ercan.</Link>
       </div>
 
-      <ul className=" hidden md:flex justify-center items-center flex-1">
-        {["home", "about", "work", "blog", "contact"].map((item) => (
-          <li key={`link-${item}`} className="my-0 mx-4 flex-col group">
-            <div className="w-2 h-2 bg-transparent rounded-full mx-auto mb-1 group-hover:bg-secondary transition-all ease-in-out" />
+      <ul className=" hidden lg:flex justify-center items-center flex-1">
+        {["home", "about", "work", "blog", "testimonials", "contact"].map(
+          (item) => (
+            <li key={`link-${item}`} className="my-0 mx-4 flex-col group">
+              <div className="w-2 h-2 bg-transparent rounded-full mx-auto mb-1 group-hover:bg-secondary transition-all ease-in-out" />
 
-            <Link
-              href={`#${item}`}
-              className="text-gray text-lg uppercase flex-col font-semibold p-1 transition-all ease-in-out group-hover:text-[#313bac]"
-            >
-              {item}
-            </Link>
-          </li>
-        ))}
+              <Link
+                href={`#${item}`}
+                className="text-gray text-lg uppercase flex-col font-semibold p-1 transition-all ease-in-out group-hover:text-[#313bac]"
+              >
+                {item}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
       <div>
         <MobileMenuBtn />

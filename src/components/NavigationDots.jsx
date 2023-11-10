@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const NavigationDots = ({ active }) => (
-  <div className="app__navigation flex justify-center items-center flex-col p-4 ">
+  <div className="absolute right-0 hidden xs:flex app__navigation justify-center items-center flex-col p-1 xxs:p-4 ">
     {["home", "about", "work", "blog", "contact"].map((item, index) => (
       <Link
         href={`#${item}`}

@@ -6,10 +6,10 @@ const AppWrap = (Component, idName, classNames) =>
     return (
       <div
         id={idName}
-        className={`app__container w-full min-h-screen flex flex-row items-center ${classNames}`}
+        className={`app__container  min-h-screen flex flex-row items-center ${classNames}`}
       >
         <SocialMedia />
-        <div className="app_wrapper app__flex flex flex-1 justify-center items-center w-full flex-col px-16 py-8">
+        <div className="app_wrapper app__flex flex flex-1 justify-center items-center">
           <Component {...props} />
         </div>
         <NavigationDots active={idName} />

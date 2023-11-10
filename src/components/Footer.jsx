@@ -3,8 +3,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <>
-      <h2 className="head-text">Contact info:</h2>
+    <section className=" bg-[#154b97]/70 text-white mt-28 w-full h-screen flex flex-col items-center justify-center ">
+      <h2 className="head-text text-lg font-semibold uppercase">
+        Contact info:
+      </h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -22,8 +24,9 @@ const Footer = () => {
             +49 (30) 88694300
           </a>
         </div>
+        <p>12049 Berlin, Germany</p>
       </div>
-      <div className="app__footer-form app__flex">
+      {/* <div className="app__footer-form app__flex">
         <div className="app__flex border w-1/3 my-1">
           <input
             className="p-text"
@@ -48,9 +51,9 @@ const Footer = () => {
           />
         </div>
         <button type="button" className="p-text"></button>
-      </div>
-    </>
+      </div> */}
+    </section>
   );
 };
 
-export default AppWrap(Footer, "app__footer");
+export default AppWrap(Footer, "contact");

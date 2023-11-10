@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
-import Topics from "./Topics";
-import Info from "@/components/Info";
+import Work from "./Work";
+import About from "@/components/About";
 import Blog from "@/components/Blog";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
@@ -10,8 +10,8 @@ import NavigationDots from "@/components/NavigationDots";
 
 export {
   Header,
-  Topics,
-  Info,
+  Work,
+  About,
   Blog,
   Testimonials,
   Footer,

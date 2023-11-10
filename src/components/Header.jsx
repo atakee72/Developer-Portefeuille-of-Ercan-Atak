@@ -1,42 +1,32 @@
 import Image from "next/image.js";
-import { twitterLogo } from "../../public/assets/index.js";
+// import { twitterLogo } from "../../public/assets/index.js";
 import AppWrap from "@/utils/AppWrap.js";
 
 const Header = () => (
-  <div className="app__header app__flex flex-1 w-full h-full flex-row pt-24 px-8 pb-0   ">
-    <div className="app__header-info flex-[0.65] flex flex-col justify-start items-start h-full mx-0 my-8">
-      <div className="app__header-badge w-full flex justify-end items-end flex-col ">
-        <div className="badge-cmp app__flex px-2 py-4 bg-white rounded-lg flex-row w-auto shadow-md ">
-          <span className="text-4xl">👋</span>
-          <div className="ml-5">
-            <p className="p-text">Hello, am</p>
-            <h1 className="head-text">Ercan</h1>
-          </div>
-        </div>
-
-        <div className="tag-cmp app__flex px-4 py-8 bg-white rounded-lg flex-row w-auto shadow-md mt-12">
-          <p className="p-text w-full uppercase text-right">Web Developer</p>
-          <p className="p-text w-full uppercase text-right">Freelancer</p>
-        </div>
+  <section className="bg-brown/30 w-full min-h-screen flex flex-col items-center justify-items-start mt-28">
+    <div className="flex flex-col items-center mt-48">
+      <div className="flex flex-col items-center text-white font-semibold mb-10 text-3xl">
+        <p className="text-4xl xxs:text-5xl text-center">Web Developer</p>
       </div>
+  
+      {/* <div className="app__header-img flex flex-1 justify-end items-end relative h-full ">
+        <Image
+          className=" object-contain z-10"
+          src={twitterLogo.src}
+          alt="Twitter Logo"
+          height={32}
+          width={32}
+        />
+      </div> */}
+  
+        <div className="w-48 h-48 xxs:w-56 xxs:h-56 xs:w-60 xs:h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full bg-secondary/40 shadow-lg" style={{boxShadow: '-100px 10px 80px 20px #080707 inset'}}>
+        </div>
+  
+        <div className="mt-10">
+        <p className="text-4xl xxs:text-5xl text-white font-semibold">Freelancer</p>
+        </div>
     </div>
-
-    <div className="app__header-img flex flex-1 justify-end items-end relative h-full ">
-      <Image
-        className=" object-contain z-10"
-        src={twitterLogo.src}
-        alt="Twitter Logo"
-        height={32}
-        width={32}
-      />
-    </div>
-
-    <div className="app__header-circles flex flex-[0.75] flex-col justify-evenly items-start h-full ml-4 ">
-      <div className="w-[100px] h-[100px] rounded-full bg-gray shadow-lg ">
-        <img className="w-[0.60] h-[0.65] " src="" alt="" />
-      </div>
-    </div>
-  </div>
+  </section>
 );
 
 export default AppWrap(Header, "home");

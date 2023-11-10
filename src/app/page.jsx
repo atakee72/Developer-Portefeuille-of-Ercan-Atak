@@ -3,8 +3,8 @@ import { postsQuery, testimonialsQuery } from "../../sanity/lib/queries.js";
 import { sanityFetch } from "../../sanity/lib/sanityFetch.js";
 import {
   Header,
-  Info,
-  Topics,
+  About,
+  Work,
   Blog,
   Testimonials,
   Footer,
@@ -21,11 +21,11 @@ const App = async () => {
         <Header />
       </header>
 
-      <main>
-        <Info />
+      <main className="w-screen h-screen">
+        <About />
+        <Work />
         <Blog posts={posts} />
         <Testimonials testimonials={testimonials} />
-        <Topics />
         <Footer />
       </main>
     </>

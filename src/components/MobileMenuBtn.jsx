@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const MobileMenuBtn = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="md:hidden w-9 h-9 rounded-full relative flex justify-center items-center bg-secondary cursor-pointer">
+    <div className="lg:hidden w-9 h-9 rounded-full relative flex justify-center items-center bg-secondary cursor-pointer">
       {!toggle && (
         <div onClick={() => setToggle(true)}>
           <HiMenuAlt4 className="w-10 h-10 text-white " />
@@ -23,17 +23,19 @@ const MobileMenuBtn = () => {
             />
           </div>
           <ul className="m-0 p-0 h-full w-full flex justify-start items-start flex-col">
-            {["home", "about", "work", "contact", "blog"].map((item) => (
-              <li className="m-4" key={item}>
-                <Link
-                  href={`#${item}`}
-                  className="text-secondary text-lg uppercase font-bold transition-all ease-in-out hover:underline"
-                  onClick={() => setToggle(false)}
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
+            {["home", "about", "work", "blog", "testimonials", "contact"].map(
+              (item) => (
+                <li className="m-4" key={item}>
+                  <Link
+                    href={`#${item}`}
+                    className="text-secondary text-lg uppercase font-bold transition-all ease-in-out hover:underline"
+                    onClick={() => setToggle(false)}
+                  >
+                    {item}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </div>
       )}

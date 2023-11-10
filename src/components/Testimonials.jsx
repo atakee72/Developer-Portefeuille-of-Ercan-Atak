@@ -19,11 +19,11 @@ const Testimonials = ({ testimonials }) => {
   }
 
   return (
-    <section className="container bg-slate-100 mx-auto">
+    <section className="bg-secondary/20 mx-auto min-h-screen mt-28 w-full">
       <div>
-        <h2 className="text-2xl p-4 font-bold">What others say?</h2>
+        <h2 className="text-2xl p-4 font-bold">What people say?</h2>
 
-        <div className="flex flex-col sm:flex-row justify-around">
+        <div className="flex flex-col md:flex-row justify-around">
           {testimonials.map((testimonial, i) => (
             <div
               className="m-4 flex flex-col justify-center items-center"

@@ -28,6 +28,7 @@ module.exports = {
       gray: "#6b7688",
       brown: "#46364a",
       white: "#ffffff",
+      yellow: "#eccc6e",
     },
   },
   plugins: [require("@tailwindcss/typography")],
