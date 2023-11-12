@@ -15,20 +15,15 @@ const App = async () => {
   const testimonials = await sanityFetch({ query: testimonialsQuery });
 
   return (
-    <>
-      <header>
-        <Navbar />
-        <Header />
-      </header>
-
-      <main className="w-screen h-screen">
-        <About />
-        <Work />
-        <Blog posts={posts} />
-        <Testimonials testimonials={testimonials} />
-        <Footer />
-      </main>
-    </>
+    <div className="bg-[#6b879c]/90 dark:bg-secondary/40">
+      <Navbar />
+      <Header />
+      <About />
+      <Work />
+      <Blog posts={posts} />
+      <Testimonials testimonials={testimonials} />
+      <Footer />
+    </div>
   );
 };
 

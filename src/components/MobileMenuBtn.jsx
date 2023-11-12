@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import Link from "next/link";
+import { ThemeToggleBtn } from "./index.js";
 // import { motion } from "framer-motion";
 
 const MobileMenuBtn = () => {
@@ -22,25 +23,28 @@ const MobileMenuBtn = () => {
               onClick={() => setToggle(false)}
             />
           </div>
-          <ul className="m-0 p-0 h-full w-full flex justify-start items-start flex-col ">
-            {["home", "about", "work", "blog", "testimonials", "contact"].map(
-              (item) => (
-                <li
-                  className="m-4 flex justify-center items-center group"
-                  key={item}
-                >
-                  <Link
-                    href={`#${item}`}
-                    className="text-secondary text-lg uppercase font-bold transition-all ease-in-out "
-                    onClick={() => setToggle(false)}
+          <div className="m-0 p-0 h-full w-full flex justify-start items-start flex-col ">
+            <ul>
+              {["home", "about", "work", "blog", "testimonials", "contact"].map(
+                (item) => (
+                  <li
+                    className="m-4 flex justify-center items-center group"
+                    key={item}
                   >
-                    {item}
-                  </Link>
-                  <div className="ml-5 w-2 h-2 bg-transparent rounded-full mx-auto mb-1 group-hover:bg-white transition-all ease-in-out" />
-                </li>
-              )
-            )}
-          </ul>
+                    <Link
+                      href={`#${item}`}
+                      className="text-secondary dark:text-white text-lg uppercase font-bold transition-all ease-in-out "
+                      onClick={() => setToggle(false)}
+                    >
+                      {item}
+                    </Link>
+                    <div className="ml-5 w-2 h-2 bg-transparent rounded-full mx-auto mb-1 group-hover:bg-white transition-all ease-in-out" />
+                  </li>
+                )
+              )}
+            </ul>
+            <ThemeToggleBtn />
+          </div>
         </div>
       )}
     </div>

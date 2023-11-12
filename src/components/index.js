@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import SocialMedia from "@/components/SocialMedia";
 import NavigationDots from "@/components/NavigationDots";
 import ThemeToggleBtn from "@/components/ThemeToggleBtn";
+import MobileMenuBtn from "@/components/MobileMenuBtn";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   SocialMedia,
   NavigationDots,
   ThemeToggleBtn,
+  MobileMenuBtn,
 };

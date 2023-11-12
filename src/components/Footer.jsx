@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className=" bg-[#930146]/30 text-white mt-28 w-full h-screen flex flex-col items-center justify-center ">
+    <section className="  text-white mt-28 w-full h-screen flex flex-col items-center justify-center ">
       <h2 className="head-text text-lg font-semibold uppercase">
         Contact info:
       </h2>

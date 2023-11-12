@@ -1,10 +1,11 @@
 import Image from "next/image.js";
+// import { twitterLogo } from "../../public/assets/index.js";
 import AppWrap from "@/utils/AppWrap.js";
 
 const Header = () => (
-  <section className=" bg-[#6b879c]/90 w-full min-h-screen flex flex-col items-center justify-items-start mt-28">
+  <section className="  w-full min-h-screen flex flex-col items-center justify-items-start mt-28">
     <div className="flex flex-col items-center mt-48">
-      <div className="flex flex-col items-center text-white hover:text-secondary font-semibold mb-10 text-3xl">
+      <div className="flex flex-col items-center text-white hover:text-secondary dark:hover:text-white font-semibold mb-10 text-3xl">
         <p className="text-4xl xxs:text-5xl text-center">Web Developer</p>
       </div>
 
@@ -24,7 +25,7 @@ const Header = () => (
       ></div>
 
       <div className="mt-10">
-        <p className="text-4xl xxs:text-5xl text-white hover:text-secondary font-semibold">
+        <p className="text-4xl xxs:text-5xl text-white hover:text-secondary dark:hover:text-white font-semibold">
           Freelancer
         </p>
       </div>
