@@ -35,7 +35,7 @@ const fieldNames = [
 ];
 
 const SocialMedia = () => (
-  <div className="absolute app__social flex justify-end items-center flex-col p-4 ">
+  <div className="absolute flex justify-end items-center flex-col p-4 ">
     {fieldNames.map((item, i) => (
       <div className="group" key={i}>
         <a

@@ -11,9 +11,9 @@
   "dependencies": {
     "@portabletext/react": "^3.0.11",
     "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.18.1",
-    "next": "^14.0.1",
-    "next-sanity": "^5.5.10",
+    "@sanity/vision": "^3.19.2",
+    "next": "^14.0.2",
+    "next-sanity": "^6.0.1",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,7 +28,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10",
     "eslint": "^8",
-    "eslint-config-next": "14.0.0",
+    "eslint-config-next": "14.0.2",
     "postcss": "^8",
     "tailwindcss": "^3"
   }

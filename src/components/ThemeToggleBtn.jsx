@@ -16,13 +16,7 @@ const ThemeToggleBtn = () => {
 
   const toggle = () => {
     console.log("Current Theme:", theme);
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
-
-    // setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
