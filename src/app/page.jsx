@@ -15,7 +15,7 @@ const App = async () => {
   const testimonials = await sanityFetch({ query: testimonialsQuery });
 
   return (
-    <div className="bg-[#6b879c]/90 dark:bg-secondary/40">
+    <div className="bg-gradient-to-r from-[#99AB8D] to-[#CE8362]/80 dark:from-secondary dark:to-secondary/40">
       <Navbar />
       <Header />
       <About />
