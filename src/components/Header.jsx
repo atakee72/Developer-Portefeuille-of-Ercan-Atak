@@ -1,10 +1,14 @@
 import AppWrap from "@/utils/AppWrap.js";
+import { syntax } from "../../public/assets/index.js";
+import Image from "next/image.js";
 
 const Header = () => (
   <section className="  w-full min-h-screen flex flex-col items-center justify-items-start mt-28">
     <div className="flex flex-col items-center mt-48">
       <div className="flex flex-col items-center text-white hover:text-secondary dark:hover:text-white font-semibold mb-10 text-3xl">
-        <p className="text-4xl xxs:text-5xl text-center">Web Developer</p>
+        <Image src={syntax.src} height={400} width={600} />
+
+        {/* <p className="text-4xl xxs:text-5xl text-center">Web Developer</p> */}
       </div>
 
       <div
