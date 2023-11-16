@@ -8,12 +8,12 @@ const Blog = ({ posts }) => {
   const title = posts.length === 1 ? `1 Post` : `${posts.length} Posts`;
 
   return (
-    <section className="place-items-center mx-auto grid grid-cols-1 min-h-screen mt-28 w-full">
+    <section className="place-items-center mx-auto min-h-screen mt-28 w-full">
       <h1 className="text-2xl text-center h-1/5 p-1 font-bold my-10">
         Latest {title} in my blog
       </h1>
-      <div className="h-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-5 mx-1 xs:mx-7 md:mx-12 xl:mx-20 2xl:mx-28">
-        {posts.map((post, index) => (
+      <div className="h-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-1 xs:mx-7 md:mx-12 xl:mx-20 2xl:mx-28">
+        {posts.map((post, i) => (
           <Link
             href={post.slug.current}
             key={post._id}
@@ -21,7 +21,7 @@ const Blog = ({ posts }) => {
           >
             <div
               className={`text-white bg-white p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg hover:translate-y-[-3px] transition-transform flex flex-col h-auto ${
-                index % 3 === 0 ? "md:w-3/4" : "md:w-3/5"
+                (i + 1) % 3 === 0 ? "md:w-3/4" : "md:w-3/5"
               } xl:w-4/5 2xl:w-2/3 mx-auto`}
             >
               <div className="flex flex-col items-center justify-center m-auto h-auto bg-gradient-to-br from-gray to-lightGray rounded-xl p-6">
