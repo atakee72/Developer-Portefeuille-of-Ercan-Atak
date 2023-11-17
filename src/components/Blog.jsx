@@ -25,14 +25,14 @@ const Blog = ({ posts }) => {
               key={post._id}
               className="container h-auto mx-auto group"
             >
-              <div className=" text-white bg-white p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg hover:translate-y-[-3px] transition-transform flex flex-col h-auto w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4 xl:w-4/5 2xl:w-2/3 mx-auto">
-                <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray to-lightGray rounded-xl  p-6">
+              <div className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg hover:translate-y-[-3px] transition-transform flex flex-col h-auto w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4 xl:w-4/5 2xl:w-2/3 mx-auto">
+                <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
                   <h3 className=" h-2/5 mx-1 my-2 w-full text-center text-2xl">
                     {post.title}
                   </h3>
 
                   <div className=" relative h-2/5 w-full aspect-[3/2] my-3">
-                    <div className="absolute font-semibold text-xs text-white px-4 py-0 right-2 top-2 rounded-lg z-10">
+                    <div className="absolute font-semibold text-xs text-white/90 px-4 py-0 right-2 top-2 rounded-lg z-10">
                       {post.label}
                     </div>
                     <Image
@@ -81,7 +81,7 @@ const Blog = ({ posts }) => {
           </>
         ))}
       </div>
-      <div className="h-1/5 w-1/6 my-2 flex items-center justify-center text-center bg-white rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary hover:text-white hover:border-4 hover:border-white">
+      <div className="h-1/5 w-1/6 my-2 flex items-center justify-center text-center bg-white/80 backdrop-blur-sm rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary/80 hover:backdrop-blur-sm hover:text-white hover:border-4 hover:border-white">
         <a href="#">All Posts</a>
       </div>
     </section>
