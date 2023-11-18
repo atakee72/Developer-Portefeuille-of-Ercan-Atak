@@ -23,7 +23,7 @@ const Blog = ({ posts }) => {
             <Link
               href={post.slug.current}
               key={post._id}
-              className="container h-auto mx-auto group"
+              className="container h-auto mx-auto group max-gap-y-1"
             >
               <div className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg hover:translate-y-[-3px] transition-transform flex flex-col h-auto w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4 xl:w-4/5 2xl:w-2/3 mx-auto">
                 <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
