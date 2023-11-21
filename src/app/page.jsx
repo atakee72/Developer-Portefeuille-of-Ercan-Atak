@@ -15,7 +15,7 @@ const App = async () => {
   const testimonials = await sanityFetch({ query: testimonialsQuery });
 
   return (
-    <div className="bg-cover bg-fixed bg-[url(https://c2k4h3i2.rocketcdn.me/w/wp-content/uploads/2022/11/black-and-white-lightroom-presets-boat_2.jpg)] dark:bg-gradient-radial dark:from-secondary dark:to-secondary/20">
+    <div className="bg-gradient-radial from-yellow to-gray dark:from-secondary dark:to-secondary/20">
       <Navbar />
       <Header />
       <About />
