@@ -9,7 +9,7 @@ const AppWrap = (Component, idName, classNames) =>
         className={`min-h-screen flex flex-row items-center ${classNames}`}
       >
         <SocialMedia />
-        <div className="app_wrapper app__flex flex flex-1 justify-center items-center">
+        <div className="flex flex-1 justify-center items-center">
           <Component {...props} />
         </div>
 

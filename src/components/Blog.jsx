@@ -23,7 +23,7 @@ const Blog = ({ posts }) => {
 
   return (
     <section
-      className="container"
+      className="container "
       // className=" place-items-center mx-auto grid grid-cols-1 min-h-screen mt-28 w-full"
     >
       <h1 className="text-2xl text-center h-1/5 p-1 font-bold my-10 ">
@@ -31,7 +31,7 @@ const Blog = ({ posts }) => {
       </h1>
       <Masonry
         breakpointCols={breakpoints}
-        className="my-masonry-grid flex ml-[-30px] w-auto justify-center "
+        className="my-masonry-grid flex ml-[-30px] w-auto "
         columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
 
         // className="h-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-5 mx-1 xs:mx-7 md:mx-12 xl:mx-20 2xl:mx-28"
