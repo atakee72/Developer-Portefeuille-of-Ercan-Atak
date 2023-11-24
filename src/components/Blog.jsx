@@ -27,7 +27,7 @@ const Blog = ({ posts }) => {
         Latest {title} in my blog
       </h1>
       <div
-        className="container masonry flex flex-col items-center sm:place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-x-1  "
+        className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-x-1  "
         // breakpointCols={breakpoints}
         // className="my-masonry-grid flex ml-[-30px] w-auto "
         // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
@@ -37,7 +37,7 @@ const Blog = ({ posts }) => {
         {posts.map((post) => (
           <div
             key={post._id}
-            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-3 sm:mx-auto mb-8 break-inside overflow-auto     w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
+            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col  mx-auto mb-8 break-inside overflow-auto     w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
           >
             <Link
               href={post.slug.current}
