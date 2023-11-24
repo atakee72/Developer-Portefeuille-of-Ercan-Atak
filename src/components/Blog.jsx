@@ -30,7 +30,7 @@ const Blog = ({ posts }) => {
         Latest {title} in my blog
       </h1>
       <div
-        className="masonry lg:masonry-lg xl:masonry-xl"
+        className="masonry md:masonry-md xl:masonry-xl"
         // breakpointCols={breakpoints}
         // className="my-masonry-grid flex ml-[-30px] w-auto "
         // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
