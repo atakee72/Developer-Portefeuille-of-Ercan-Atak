@@ -6,7 +6,6 @@ import Image from "next/image";
 // import { client } from "../../sanity/lib/client.js";
 import { urlForImage } from "../../sanity/lib/image.js";
 import AppWrap from "@/utils/AppWrap.js";
-import Masonry from "react-masonry-css";
 
 // const builder = imageUrlBuilder(client);
 
@@ -23,14 +22,14 @@ const Blog = ({ posts }) => {
 
   return (
     <section
-      className="container "
+      className="container w-auto"
       // className=" place-items-center mx-auto grid grid-cols-1 min-h-screen mt-28 w-full"
     >
       <h1 className="text-2xl text-center h-1/5 p-1 font-bold my-10 ">
         Latest {title} in my blog
       </h1>
       <div
-        className="container masonry lg:masonry-lg xl:masonry-xl"
+        className="container masonry lg:masonry-lg xl:masonry-xl place-items-start"
         // breakpointCols={breakpoints}
         // className="my-masonry-grid flex ml-[-30px] w-auto "
         // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
