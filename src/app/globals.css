@@ -8,11 +8,15 @@
             column-gap: 1.5em;
             column-count: 1;
         }
-        .masonry-sm {
+        /* .masonry-sm {
+            column-gap: 1.5em;
+            column-count: 2;
+        } */
+        .masonry-lg {
             column-gap: 1.5em;
             column-count: 2;
         }
-        .masonry-md {
+        .masonry-xl {
             column-gap: 1.5em;
             column-count: 3;
         }
