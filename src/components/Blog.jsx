@@ -30,7 +30,7 @@ const Blog = ({ posts }) => {
         Latest {title} in my blog
       </h1>
       <div
-        className="masonry md:masonry-md xl:masonry-xl"
+        className="container masonry lg:masonry-lg xl:masonry-xl"
         // breakpointCols={breakpoints}
         // className="my-masonry-grid flex ml-[-30px] w-auto "
         // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
@@ -40,7 +40,7 @@ const Blog = ({ posts }) => {
         {posts.map((post) => (
           <div
             key={post._id}
-            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg hover:translate-y-[-3px] transition-transform flex flex-col w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4 xl:w-4/5 2xl:w-2/3 mx-12 mb-8 break-inside"
+            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4 xl:w-4/5 2xl:w-2/3 mx-12 mb-8 break-inside"
           >
             <Link
               href={post.slug.current}
