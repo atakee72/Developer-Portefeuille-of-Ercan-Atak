@@ -20,14 +20,14 @@ const Blog = ({ posts }) => {
 
   return (
     <section
-      className="container w-9/12 rounded-br-full rounded-tl-full bg-primary/10"
+      className="container flex flex-col items-center w-9/12 rounded-3xl shadow-md bg-primary/10"
       // className=" place-items-center mx-auto grid grid-cols-1 min-h-screen mt-28 w-full"
     >
-      <h1 className="text-2xl text-center h-1/5 p-1 font-bold my-10 ">
+      <h1 className="text-2xl text-center text-primary/90 h-1/5 p-1 font-bold my-10 ">
         Latest {title} in my blog
       </h1>
       <div
-        className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-x-1  "
+        className="container masonry flex flex-col items-center sm:place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-x-1  "
         // breakpointCols={breakpoints}
         // className="my-masonry-grid flex ml-[-30px] w-auto "
         // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
@@ -37,7 +37,7 @@ const Blog = ({ posts }) => {
         {posts.map((post) => (
           <div
             key={post._id}
-            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col  mx-auto mb-8 break-inside overflow-auto     w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
+            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-3 sm:mx-auto mb-8 break-inside overflow-auto     w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
           >
             <Link
               href={post.slug.current}
@@ -62,7 +62,7 @@ const Blog = ({ posts }) => {
                     className="rounded-xl"
                   />
                 </div>
-                <div className=" w-2/3 h-1/5 mx-auto text-center border-white border-4 mt-3 rounded-xl group-hover:bg-secondary/80 p-1 ">
+                <div className=" w-2/3 h-1/5 mx-auto text-center border-white/90 hover:bg-secondary/70 border-2 mt-3 rounded-xl group-hover:bg-secondary/80 p-1 ">
                   Read more
                 </div>
               </div>
@@ -70,7 +70,7 @@ const Blog = ({ posts }) => {
           </div>
         ))}
       </div>
-      <div className="h-1/5 w-1/6 my-8 flex items-center justify-center text-center bg-white/80 backdrop-blur-sm rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary/80 hover:backdrop-blur-sm hover:text-white hover:border-4 hover:border-white">
+      <div className="h-1/5 w-1/6 py-2 mt-8 mb-14 flex items-center justify-center text-center bg-white/80 backdrop-blur-sm rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary/70 hover:backdrop-blur-sm hover:text-white hover:border-2 hover:border-white">
         <a href="#">All Posts</a>
       </div>
     </section>
