@@ -49,11 +49,11 @@ const Blog = ({ posts }) => {
               // className="container h-auto mx-auto group max-gap-y-1"
             >
               <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
-                <h3 className=" h-2/5 mx-1 my-2 w-full text-center text-2xl">
+                <h3 className=" mx-1 my-2 w-full text-center text-2xl">
                   {post.title}
                 </h3>
 
-                <div className=" relative h-2/5 w-full aspect-[3/2] my-3">
+                <div className=" relative  w-full aspect-[3/2] my-3">
                   <div className="absolute font-semibold text-xs text-white/90 px-4 py-0 right-2 top-2 rounded-lg z-10">
                     {post.label}
                   </div>
