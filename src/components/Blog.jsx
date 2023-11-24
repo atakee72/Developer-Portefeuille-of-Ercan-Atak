@@ -39,7 +39,7 @@ const Blog = ({ posts }) => {
         {posts.map((post) => (
           <div
             key={post._id}
-            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col  mx-12 mb-8 break-inside overflow-auto     w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
+            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col  mx-auto mb-8 break-inside overflow-auto     w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
           >
             <Link
               href={post.slug.current}
