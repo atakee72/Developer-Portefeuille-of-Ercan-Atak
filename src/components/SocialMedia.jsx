@@ -19,7 +19,7 @@ const fieldNames = [
   },
   {
     name: "linkedin",
-    web: "https://linkedin.com/in/atakee72",
+    web: "https://linkedin.com/in/ercan-atak",
     icon: "AiOutlineLinkedin",
   },
   {

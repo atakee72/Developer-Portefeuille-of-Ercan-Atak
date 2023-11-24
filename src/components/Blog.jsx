@@ -18,7 +18,7 @@ const Blog = ({ posts }) => {
   const breakpoints = {
     default: 3,
     1100: 2,
-    500: 1,
+    900: 1,
   };
 
   return (
@@ -29,10 +29,11 @@ const Blog = ({ posts }) => {
       <h1 className="text-2xl text-center h-1/5 p-1 font-bold my-10 ">
         Latest {title} in my blog
       </h1>
-      <Masonry
-        breakpointCols={breakpoints}
-        className="my-masonry-grid flex ml-[-30px] w-auto "
-        columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
+      <div
+        className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 "
+        // breakpointCols={breakpoints}
+        // className="my-masonry-grid flex ml-[-30px] w-auto "
+        // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
 
         // className="h-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-5 mx-1 xs:mx-7 md:mx-12 xl:mx-20 2xl:mx-28"
       >
@@ -71,7 +72,7 @@ const Blog = ({ posts }) => {
             </Link>
           </div>
         ))}
-      </Masonry>
+      </div>
       <div className="h-1/5 w-1/6 my-8 flex items-center justify-center text-center bg-white/80 backdrop-blur-sm rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary/80 hover:backdrop-blur-sm hover:text-white hover:border-4 hover:border-white">
         <a href="#">All Posts</a>
       </div>
