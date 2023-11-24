@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 // import imageUrlBuilder from "@sanity/image-url";
@@ -14,22 +12,22 @@ import React from "react";
 const Blog = ({ posts }) => {
   const title = posts.length === 1 ? `1 Post` : `${posts.length} Posts`;
 
-  const breakpoints = {
-    default: 3,
-    1100: 2,
-    900: 1,
-  };
+  // const breakpoints = {
+  //   default: 3,
+  //   1100: 2,
+  //   900: 1,
+  // };
 
   return (
     <section
-      className="container w-auto"
+      className="container w-9/12 rounded-br-full rounded-tl-full bg-primary/10"
       // className=" place-items-center mx-auto grid grid-cols-1 min-h-screen mt-28 w-full"
     >
       <h1 className="text-2xl text-center h-1/5 p-1 font-bold my-10 ">
         Latest {title} in my blog
       </h1>
       <div
-        className="container masonry lg:masonry-lg xl:masonry-xl place-items-start"
+        className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-x-1  "
         // breakpointCols={breakpoints}
         // className="my-masonry-grid flex ml-[-30px] w-auto "
         // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
