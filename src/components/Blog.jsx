@@ -15,7 +15,10 @@ const Blog = ({ posts }) => {
       <h1 className="text-2xl text-center text-primary/90 h-1/5 p-1 font-bold my-10 ">
         Latest {title} in my blog
       </h1>
-      <div className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-0 mx-1 ">
+      <div
+        className="gap-8 columns-1 lg:columns-2 xl:columns-3"
+        // className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-0 mx-1 "
+      >
         {posts.map((post) => (
           <div
             key={post._id}
@@ -49,6 +52,13 @@ const Blog = ({ posts }) => {
       </div>
       <div className="h-1/5 w-1/6 py-2 mt-8 mb-14 flex items-center justify-center text-center bg-white/80 backdrop-blur-sm rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary/70 hover:backdrop-blur-sm hover:text-white hover:border-2 hover:border-white">
         <a href="#">All Posts</a>
+      </div>
+
+      <div class="gap-8 columns-3">
+        <img
+          class="w-full  mb-6"
+          src="https://picsum.photos/500/300?random=1"
+        />
       </div>
     </section>
   );
