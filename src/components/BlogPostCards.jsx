@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const MasonryCards = ({ href, title, label, src, alt }) => {
+const BlogPostCards = ({ href, title, label, src, alt }) => {
   return (
-    <div className="container text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-auto mb-8  overflow-auto ">
+    <div className="container text-white/90 bg-white/20 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-auto mb-8  overflow-auto ">
       <Link href={href}>
         <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
           <h3 className=" mx-1 my-2 w-full text-center text-2xl">{title}</h3>
@@ -30,4 +30,4 @@ const MasonryCards = ({ href, title, label, src, alt }) => {
   );
 };
 
-export default MasonryCards;
+export default BlogPostCards;

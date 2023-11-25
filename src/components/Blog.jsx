@@ -1,12 +1,7 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-// import imageUrlBuilder from "@sanity/image-url";
-// import { client } from "../../sanity/lib/client.js";
 import { urlForImage } from "../../sanity/lib/image.js";
 import AppWrap from "@/utils/AppWrap.js";
-// const builder = imageUrlBuilder(client);
-import BlogPostCard from "./BlogPostCard.jsx";
+import BlogPostCards from "./BlogPostCards.jsx";
 
 const Blog = ({ posts }) => {
   const title = posts.length === 1 ? `1 Post` : `${posts.length} Posts`;
@@ -22,7 +17,7 @@ const Blog = ({ posts }) => {
       >
         {posts.map((post) => (
           <div key={post._id}>
-            <BlogPostCard
+            <BlogPostCards
               href={post.slug.current}
               title={post.title}
               label={post.label}
@@ -61,7 +56,7 @@ const Blog = ({ posts }) => {
         ))}
       </div>
       <div className="h-1/5 w-1/6 py-2 mt-8 mb-14 flex items-center justify-center text-center bg-white/80 backdrop-blur-sm rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary/70 hover:backdrop-blur-sm hover:text-white hover:border-2 hover:border-white">
-        <a href="#">All Posts</a>
+        <a href="#">More</a>
       </div>
     </section>
   );
