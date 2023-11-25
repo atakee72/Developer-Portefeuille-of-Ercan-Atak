@@ -16,13 +16,13 @@ const Blog = ({ posts }) => {
         Latest {title} in my blog
       </h1>
       <div
-        className="gap-8 columns-1 lg:columns-2 xl:columns-3"
+        className="container gap-4 columns-1 md:columns-2 xl:columns-3 2xl:columns-4 p-7 "
         // className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-0 mx-1 "
       >
         {posts.map((post) => (
           <div
             key={post._id}
-            className="container text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col  mx-auto mb-8 break-inside overflow-auto w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
+            className="container text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-auto mb-8  overflow-auto "
           >
             <Link href={post.slug.current}>
               <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
