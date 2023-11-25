@@ -1,50 +1,27 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // import imageUrlBuilder from "@sanity/image-url";
 // import { client } from "../../sanity/lib/client.js";
 import { urlForImage } from "../../sanity/lib/image.js";
 import AppWrap from "@/utils/AppWrap.js";
-
 // const builder = imageUrlBuilder(client);
-
-import React from "react";
 
 const Blog = ({ posts }) => {
   const title = posts.length === 1 ? `1 Post` : `${posts.length} Posts`;
 
-  // const breakpoints = {
-  //   default: 3,
-  //   1100: 2,
-  //   900: 1,
-  // };
-
   return (
-    <section
-      className="container flex flex-col items-center w-9/12 rounded-3xl shadow-md bg-primary/10"
-      // className=" place-items-center mx-auto grid grid-cols-1 min-h-screen mt-28 w-full"
-    >
+    <section className="container min-h-screen flex flex-col items-center mt-32 w-9/12 mx-auto rounded-3xl shadow-md bg-primary/10">
       <h1 className="text-2xl text-center text-primary/90 h-1/5 p-1 font-bold my-10 ">
         Latest {title} in my blog
       </h1>
-      <div
-        className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-x-1  "
-        // breakpointCols={breakpoints}
-        // className="my-masonry-grid flex ml-[-30px] w-auto "
-        // columnClassName="my-masonry-grid_column pl-[30px] bg-clip-padding "
-
-        // className="h-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-5 mx-1 xs:mx-7 md:mx-12 xl:mx-20 2xl:mx-28"
-      >
+      <div className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-0 mx-1 ">
         {posts.map((post) => (
           <div
             key={post._id}
-            className=" text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col  mx-auto mb-8 break-inside overflow-auto     w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
+            className="container text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col  mx-auto mb-8 break-inside overflow-auto w-3/4 xs:w-2/3 sm:w-3/4 md:w-3/4"
           >
-            <Link
-              href={post.slug.current}
-              className=" h-auto"
-
-              // className="container h-auto mx-auto group max-gap-y-1"
-            >
+            <Link href={post.slug.current}>
               <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
                 <h3 className=" mx-1 my-2 w-full text-center text-2xl">
                   {post.title}
