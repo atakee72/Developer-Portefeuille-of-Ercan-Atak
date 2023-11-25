@@ -6,6 +6,7 @@ import Image from "next/image";
 import { urlForImage } from "../../sanity/lib/image.js";
 import AppWrap from "@/utils/AppWrap.js";
 // const builder = imageUrlBuilder(client);
+import BlogPostCard from "./BlogPostCard.jsx";
 
 const Blog = ({ posts }) => {
   const title = posts.length === 1 ? `1 Post` : `${posts.length} Posts`;
@@ -20,45 +21,45 @@ const Blog = ({ posts }) => {
         // className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-0 mx-1 "
       >
         {posts.map((post) => (
-          <div
-            key={post._id}
-            className="container text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-auto mb-8  overflow-auto "
-          >
-            <Link href={post.slug.current}>
-              <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
-                <h3 className=" mx-1 my-2 w-full text-center text-2xl">
-                  {post.title}
-                </h3>
+          <BlogPostCard
+            href={post.slug.current}
+            title={post.title}
+            label={post.label}
+            src={urlForImage(post.mainImage).url()}
+            alt={post?.mainImage?.alt}
+          />
+          // <div
+          //   key={post._id}
+          //   className="container text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-auto mb-8  overflow-auto "
+          // >
+          //   <Link href={post.slug.current}>
+          //     <div className="flex flex-col items-center justify-center  m-auto h-auto bg-gradient-to-br from-gray/80 to-lightGray/80 backdrop-blur-sm rounded-xl  p-6">
+          //       <h3 className=" mx-1 my-2 w-full text-center text-2xl">
+          //         {post.title}
+          //       </h3>
 
-                <div className=" relative  w-full aspect-[3/2] my-3">
-                  <div className="absolute font-semibold text-xs text-white/90 px-4 py-0 right-2 top-2 rounded-lg z-10">
-                    {post.label}
-                  </div>
-                  <Image
-                    src={urlForImage(post.mainImage).url()}
-                    alt={post?.mainImage?.alt}
-                    fill
-                    sizes="100vw"
-                    className="rounded-xl"
-                  />
-                </div>
-                <div className=" w-2/3 h-1/5 mx-auto text-center border-white/90 hover:bg-secondary/70 border-2 mt-3 rounded-xl group-hover:bg-secondary/80 p-1 ">
-                  Read more
-                </div>
-              </div>
-            </Link>
-          </div>
+          //       <div className=" relative  w-full aspect-[3/2] my-3">
+          //         <div className="absolute font-semibold text-xs text-white/90 px-4 py-0 right-2 top-2 rounded-lg z-10">
+          //           {post.label}
+          //         </div>
+          //         <Image
+          //           src={urlForImage(post.mainImage).url()}
+          //           alt={post?.mainImage?.alt}
+          //           fill
+          //           sizes="100vw"
+          //           className="rounded-xl"
+          //         />
+          //       </div>
+          //       <div className=" w-2/3 h-1/5 mx-auto text-center border-white/90 hover:bg-secondary/70 border-2 mt-3 rounded-xl group-hover:bg-secondary/80 p-1 ">
+          //         Read more
+          //       </div>
+          //     </div>
+          //   </Link>
+          // </div>
         ))}
       </div>
       <div className="h-1/5 w-1/6 py-2 mt-8 mb-14 flex items-center justify-center text-center bg-white/80 backdrop-blur-sm rounded-md mx-[900px] px-0 font-semibold text-xl  text-secondary hover:bg-secondary/70 hover:backdrop-blur-sm hover:text-white hover:border-2 hover:border-white">
         <a href="#">All Posts</a>
-      </div>
-
-      <div class="gap-8 columns-3">
-        <img
-          class="w-full  mb-6"
-          src="https://picsum.photos/500/300?random=1"
-        />
       </div>
     </section>
   );
