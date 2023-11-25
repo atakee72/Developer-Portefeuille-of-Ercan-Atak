@@ -21,13 +21,15 @@ const Blog = ({ posts }) => {
         // className="container masonry place-items-start lg:masonry-lg xl:masonry-xl w-auto gap-0 mx-1 "
       >
         {posts.map((post) => (
-          <BlogPostCard
-            href={post.slug.current}
-            title={post.title}
-            label={post.label}
-            src={urlForImage(post.mainImage).url()}
-            alt={post?.mainImage?.alt}
-          />
+          <div key={post._id}>
+            <BlogPostCard
+              href={post.slug.current}
+              title={post.title}
+              label={post.label}
+              src={urlForImage(post.mainImage).url()}
+              alt={post?.mainImage?.alt}
+            />
+          </div>
           // <div
           //   key={post._id}
           //   className="container text-white/90 bg-white/50 backdrop-blur-sm p-4 rounded-xl duration-300 ease-in-out shadow-md hover:shadow-lg h-auto hover:translate-y-[-3px] transition-transform flex flex-col mx-auto mb-8  overflow-auto "
