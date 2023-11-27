@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BsInstagram } from "react-icons/bs";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaBehance } from "react-icons/fa";
 import React from "react";
 
 const iconComponents = {
@@ -9,6 +9,7 @@ const iconComponents = {
   AiOutlineLinkedin,
   BsInstagram,
   FaFacebookF,
+  FaBehance,
 };
 
 const fieldNames = [
@@ -21,6 +22,11 @@ const fieldNames = [
     name: "linkedin",
     web: "https://linkedin.com/in/ercan-atak",
     icon: "AiOutlineLinkedin",
+  },
+  {
+    name: "behance",
+    web: "https://www.behance.net/E-Atak-Photography",
+    icon: "FaBehance",
   },
   {
     name: "instagram",
