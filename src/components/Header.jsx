@@ -16,6 +16,18 @@ const Header = () => (
         style={{ boxShadow: "-100px 10px 80px 20px #080707 inset" }}
       ></div>
 
+      <div className="flex  text-center text-9xl border border-b-yavru w-96">
+        <div className="border w-1/3  transition-all duration-500 hover:w-2/3">
+          <Image src={syntax.src} height={400} width={600} />
+        </div>
+        <div className="border w-1/3 transition-all duration-500 hover:w-2/3">
+          <Image src={syntax.src} height={400} width={600} />
+        </div>
+        <div className="border w-1/3 transition-all duration-500 hover:w-2/3">
+          <Image src={syntax.src} height={400} width={600} />
+        </div>
+      </div>
+
       <div className="mt-10">
         <p className="text-4xl xxs:text-5xl text-white hover:text-secondary dark:hover:text-white font-semibold">
           Freelancer
