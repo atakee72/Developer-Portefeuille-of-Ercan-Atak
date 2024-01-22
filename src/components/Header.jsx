@@ -1,5 +1,10 @@
 import AppWrap from "@/utils/AppWrap.js";
-import { syntax } from "../../public/assets/index.js";
+import {
+  dashboard,
+  graduate,
+  mahalle,
+  syntax,
+} from "../../public/assets/index.js";
 import Image from "next/image.js";
 
 const Header = () => (
@@ -16,15 +21,43 @@ const Header = () => (
         style={{ boxShadow: "-100px 10px 80px 20px #080707 inset" }}
       ></div>
 
-      <div className="flex  text-center text-9xl border border-b-yavru w-96">
-        <div className="border w-1/3  transition-all duration-500 hover:w-2/3">
-          <Image src={syntax.src} height={400} width={600} />
+      <div className="mt-5 p-3 bg-white gap-3 flex font-semibold text-xl w-full h-96">
+        <div className="relative w-1/3 transition-all duration-500 hover:w-2/3">
+          <Image
+            className=" h-full w-full aspect-square group-hover:aspect-[3/2]"
+            object-cover
+            src={mahalle.src}
+            height={600}
+            width={300}
+          />
+          <p className="absolute top-5 left-3 z-20 underline">
+            MaHalle: Home-made Facebook for the Neighbourhood
+          </p>
         </div>
-        <div className="border w-1/3 transition-all duration-500 hover:w-2/3">
-          <Image src={syntax.src} height={400} width={600} />
+        <div className="relative w-1/3 transition-all duration-500 hover:w-2/3">
+          <Image
+            className="h-full w-full aspect-square group-hover:aspect-[3/2]"
+            object-cover
+            src={graduate.src}
+            height={450}
+            width={300}
+          />
+          <p className="absolute top-5 left-3 z-20 underline">
+            Can Dogs & Movies go together?! For the sake of exercise, yeah, why
+            not!
+          </p>
         </div>
-        <div className="border w-1/3 transition-all duration-500 hover:w-2/3">
-          <Image src={syntax.src} height={400} width={600} />
+        <div className="relative group text-secondary w-1/3 transition-all duration-500 hover:w-2/3">
+          <Image
+            className="h-full w-full aspect-square group-hover:aspect-[3/2]"
+            object-cover
+            src={dashboard.src}
+            height={450}
+            width={300}
+          />
+          <p className="absolute top-5 left-3 z-20 underline">
+            Yet another admin dashboard!
+          </p>
         </div>
       </div>
 
