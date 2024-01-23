@@ -4,7 +4,7 @@ import bgWhite from "/public/assets/bgWhite.png";
 import moon from "/public/assets/moon.png";
 import sun from "/public/assets/sun.png";
 import syntax from "/public/assets/syntax.png";
-import mahalle from "/public/assets/mahalle.png";
+import maHalle from "/public/assets/maHalle.png";
 import graduate from "/public/assets/graduate.jpg";
 import dashboard from "/public/assets/dashboard.png";
 
@@ -15,7 +15,7 @@ export {
   moon,
   sun,
   syntax,
-  mahalle,
+  maHalle,
   graduate,
   dashboard,
 };

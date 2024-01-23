@@ -2,7 +2,7 @@ import AppWrap from "@/utils/AppWrap.js";
 import {
   dashboard,
   graduate,
-  mahalle,
+  maHalle,
   syntax,
 } from "../../public/assets/index.js";
 import Image from "next/image.js";
@@ -26,7 +26,7 @@ const Header = () => (
           <Image
             className=" h-full w-full aspect-square group-hover:aspect-[3/2]"
             object-cover
-            src={mahalle.src}
+            src={maHalle.src}
             height={600}
             width={300}
           />
