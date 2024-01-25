@@ -30,7 +30,7 @@ const Header = () => (
             height={600}
             width={300}
           />
-          <p className="absolute top-5 left-3 z-20 underline">
+          <p className="absolute top-5 left-3 z-20 underline w-full h-full">
             MaHalle: Home-made Facebook for the Neighbourhood
           </p>
         </div>
