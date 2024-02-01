@@ -20,6 +20,11 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        slidein300: "slidein 1s ease 300ms forwards",
+        slidein500: "slidein 1s ease 500ms forwards",
+        slidein700: "slidein 1s ease 700ms forwards",
+      },
     },
     colors: {
       primary: "#edf2f8",
