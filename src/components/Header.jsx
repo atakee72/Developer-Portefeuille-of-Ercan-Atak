@@ -3,14 +3,16 @@ import {
   dashboard,
   graduate,
   maHalle,
-  syntax,
+  // syntax,
 } from "../../public/assets/index.js";
 import Image from "next/image.js";
 import Link from "next/link";
 
 const Header = () => (
   <section className="  w-full min-h-screen flex flex-col items-center justify-items-start mt-28">
-    <div className="flex flex-col items-center mt-48">
+    <div
+    // className="flex flex-col items-center mt-48"
+    >
       <div className="animate-slidein300 flex flex-col items-center text-white hover:text-secondary dark:hover:text-white font-semibold mb-10 text-3xl">
         {/* <Image
           className="rounded-2xl shadow-lg mb-10"
@@ -23,7 +25,7 @@ const Header = () => (
       </div>
 
       <div
-        className="animate-slidein500 w-48 h-48 xxs:w-56 xxs:h-56 xs:w-60 xs:h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-[300px] xl:h-[300px] rounded-full bg-secondary/50 shadow-lg"
+        className="m-auto animate-slidein500 w-48 h-48 xxs:w-56 xxs:h-56 xs:w-60 xs:h-60 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-[300px] xl:h-[300px] rounded-full bg-secondary/50 shadow-lg"
         style={{ boxShadow: "-100px 10px 80px 20px #080707 inset" }}
       ></div>
 
