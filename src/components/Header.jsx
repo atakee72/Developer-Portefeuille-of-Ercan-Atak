@@ -38,6 +38,7 @@ const Header = () => (
             src={maHalle.src}
             height={400}
             width={600}
+            alt="Logo of MaHalle"
           />
           <div className="absolute font-sans font-normal tracking-widest leading-9 box-border m-0 flex flex-col items-start justify-center text-primary text-5xl top-0 left-0 z-20 w-full h-full bg-secondary/80 uppercase">
             {" "}
@@ -71,6 +72,7 @@ const Header = () => (
             src={graduate.src}
             height={400}
             width={600}
+            alt="Cover picture of Dogs and Movies"
           />
           <div className="absolute font-sans font-normal tracking-widest leading-9 box-border m-0 flex flex-col items-start justify-center text-primary text-5xl top-0 left-0 z-20 w-full h-full bg-secondary/80 uppercase">
             <h1>Can </h1>
@@ -98,6 +100,7 @@ const Header = () => (
             src={dashboard.src}
             height={400}
             width={600}
+            alt="Cover picture of the Dashboard"
           />
           <div className="absolute font-sans font-normal tracking-widest leading-9 box-border m-0 flex flex-col items-start justify-center text-primary text-5xl top-0 left-0 z-20 w-full h-full bg-secondary/80 uppercase">
             {" "}
