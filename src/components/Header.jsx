@@ -1,12 +1,13 @@
 import AppWrap from "@/utils/AppWrap.js";
-import {
-  dashboard,
-  graduate,
-  maHalle,
-  // syntax,
-} from "../../public/assets/index.js";
-import Image from "next/image.js";
-import Link from "next/link";
+// import {
+//   dashboard,
+//   graduate,
+//   maHalle,
+//   // syntax,
+// } from "../../public/assets/index.js";
+// import Image from "next/image.js";
+// import Link from "next/link";
+import MyAccordion from "./MyAccordion.jsx";
 
 const Header = () => (
   <section className="  w-full min-h-screen flex flex-col items-center justify-items-start mt-28">
@@ -29,7 +30,7 @@ const Header = () => (
         style={{ boxShadow: "-100px 10px 80px 20px #080707 inset" }}
       ></div>
 
-      <div className="mt-5 p-6 bg-primary gap-5 flex font-semibold text-xl 2xl:w-[1600px] xl:w-[1400px] lg:w-[1200px] md:w-[1000px] sm:w-[800px]  h-[550px] rounded-sm overflow-hidden">
+      {/* <div className="mt-5 p-6 bg-primary gap-5 flex font-semibold text-xl 2xl:w-[1600px] xl:w-[1400px] lg:w-[1200px] md:w-[1000px] sm:w-[800px]  h-[550px] rounded-sm overflow-hidden">
         <Link
           href="https://mahalle-kiez-gesichterbuch.vercel.app"
           target="_blank"
@@ -123,7 +124,8 @@ const Header = () => (
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
+      <MyAccordion />
     </div>
   </section>
 );
