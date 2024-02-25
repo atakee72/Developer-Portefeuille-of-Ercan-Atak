@@ -9,6 +9,7 @@ import SocialMedia from "@/components/SocialMedia";
 import NavigationDots from "@/components/NavigationDots";
 import ThemeToggleBtn from "@/components/ThemeToggleBtn";
 import MobileMenuBtn from "@/components/MobileMenuBtn";
+import MyAccordion from "./MyAccordion";
 
 export {
   Header,
@@ -22,4 +23,5 @@ export {
   NavigationDots,
   ThemeToggleBtn,
   MobileMenuBtn,
+  MyAccordion,
 };

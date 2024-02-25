@@ -1,12 +1,4 @@
 import AppWrap from "@/utils/AppWrap.js";
-// import {
-//   dashboard,
-//   graduate,
-//   maHalle,
-//   // syntax,
-// } from "../../public/assets/index.js";
-// import Image from "next/image.js";
-// import Link from "next/link";
 import MyAccordion from "./MyAccordion.jsx";
 
 const Header = () => (

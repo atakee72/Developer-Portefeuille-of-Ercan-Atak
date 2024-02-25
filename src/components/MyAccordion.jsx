@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  dashboard,
-  graduate,
-  maHalle,
-  // syntax,
-} from "../../public/assets/index.js";
+import { dashboard, graduate, maHalle } from "../../public/assets/index.js";
 import Image from "next/image.js";
 import Link from "next/link";
 
